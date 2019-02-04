@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicaNet.Data", "PicaNet.Data\PicaNet.Data.csproj", "{D18F0171-C399-42A5-B3C7-6B61D80FFECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicaNet.Web", "PicaNet.Web\PicaNet.Web.csproj", "{616EE563-AD97-4592-B48B-6928840D87E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D18F0171-C399-42A5-B3C7-6B61D80FFECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18F0171-C399-42A5-B3C7-6B61D80FFECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18F0171-C399-42A5-B3C7-6B61D80FFECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18F0171-C399-42A5-B3C7-6B61D80FFECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616EE563-AD97-4592-B48B-6928840D87E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616EE563-AD97-4592-B48B-6928840D87E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616EE563-AD97-4592-B48B-6928840D87E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616EE563-AD97-4592-B48B-6928840D87E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B1BA18-4B48-4012-BF1C-419CA1E6B1D2}
+	EndGlobalSection
+EndGlobal

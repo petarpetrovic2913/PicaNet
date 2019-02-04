@@ -1,0 +1,13 @@
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\PicaNet.Data.dll.config
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\PicaNet.Data.dll
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\PicaNet.Data.pdb
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\EntityFramework.dll
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\EntityFramework.xml
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\obj\Debug\PicaNet.Data.csprojAssemblyReference.cache
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\obj\Debug\PicaNet.Data.csproj.CoreCompileInputs.cache
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\obj\Debug\PicaNet.Data.csproj.CopyComplete
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\obj\Debug\PicaNet.Data.dll
+C:\Users\c0pe\source\repos\PicaNet.Data\PicaNet.Data\obj\Debug\PicaNet.Data.pdb

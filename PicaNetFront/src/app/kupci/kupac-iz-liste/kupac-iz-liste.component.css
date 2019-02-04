@@ -1,0 +1,9 @@
+hr.current-kupac {
+    border-color: #337ab7;
+    border-width: 5px;
+}
+
+.svakiKupac:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}

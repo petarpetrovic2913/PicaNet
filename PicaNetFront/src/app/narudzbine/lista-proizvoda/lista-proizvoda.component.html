@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <tbody>
+    <tr *ngFor="let proizvod of proizvodi" (click)="izaberiProizvod(proizvod)" [ngClass]="{'success': proizvod === izabraniProizvod}">
+      <td><img src="../../../slike/{{proizvod.slika}}" /></td>
+      <td width="50%"><span style="font-weight: bold">{{proizvod.ime}}</span><br /><span>{{proizvod.opis}}</span></td>
+      <td>
+        <select class="form-control" [(ngModel)]="izabranaVelicinaProizvodaId"  *ngIf="proizvod===izabraniProizvod" style="width:150px">
+              <option *ngIf="izabranaVelicinaProizvodaId== -1" value="-1">Velicina</option>
+              <option *ngFor="let velicina of velicineProizvoda" [ngValue]="velicina.id" >{{velicina.ime}}</option>
+         </select>
+      </td>
+      <td class="dodaj"><button class="btn btn-primary" (click)="dodaj_u_narudzbinu()" 
+        [disabled]="proizvod !== izabraniProizvod || (izabranaVelicinaProizvodaId=== -1)">Dodaj u narudzbinu</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

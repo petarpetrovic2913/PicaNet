@@ -1,0 +1,26 @@
+<div>
+    <h3>Naruci</h3>
+    <div>
+      <button class="btn btn-primary" (click)="potvrdiNarudzbinu()">Potvrdite narudzbinu</button>
+      <button class="btn btn-default" (click)="otkaziNarudzbinu()">Otkazite narudzbinu</button>
+    </div>
+    <h4>Proizvodi narudzbine:</h4>
+    <ul>
+      <li *ngFor="let pN of proizvodiNarudzbine">{{pN.proizvod.ime}} - {{pN.velicina.ime}}</li>
+    </ul>
+    <ul class="nav nav-tabs">
+      <li [ngClass]="{'active': selectedTab === 'pice'}">
+        <a (click)="selectedTab = 'pice'">Pice</a>
+      </li>
+      <li [ngClass]="{'active': selectedTab === 'salate'}">
+        <a (click)="selectedTab = 'salate'">Salate</a>
+      </li>
+      <li [ngClass]="{'active': selectedTab === 'napici'}">
+        <a (click)="selectedTab = 'napici'">Napici</a>
+      </li>
+    </ul>
+    <pica-lista-proizvoda [proizvodi]="pice" (dodajProizvod)="dodaj_u_narudzbinu($event)" *ngIf="selectedTab === 'pice'" [tipProizvoda]="'Pizza'"></pica-lista-proizvoda>
+    <pica-lista-proizvoda [proizvodi]="salate" (dodajProizvod)="dodaj_u_narudzbinu($event)" *ngIf="selectedTab === 'salate'" [tipProizvoda]="'salad'"></pica-lista-proizvoda>
+    <pica-lista-proizvoda [proizvodi]="napici" (dodajProizvod)="dodaj_u_narudzbinu($event)" *ngIf="selectedTab === 'napici'" [tipProizvoda]="'drink'"></pica-lista-proizvoda>
+  </div>
+  

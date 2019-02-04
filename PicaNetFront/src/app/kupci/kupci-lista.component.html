@@ -1,0 +1,24 @@
+<h1>Kupci</h1>
+<div class="row" *ngIf="brojStranica">
+    <span>
+        <a class="btn btn-default" (click)="stranicaDole()">&lt;</a>{{trenutnaStranica}}/{{brojStranica}}<a class="btn btn-default" (click)="stranicaGore()">&gt;</a>
+    </span>
+</div>
+<div class="row pretraga">
+    <label for="pretragaUnos">Pretraga:</label>
+    <input type="text" name="pretragaUnos" class="parametar" autofocus #vrednost (keyup)="pretraga(vrednost.value)" (blur)="pretraga(vrednost.value)">
+    <select [(ngModel)]="paramPretraga" (change)="pretraga(vrednost.value)" class="parametar">
+        <option value="ime" selected>Ime</option>
+        <option value="telefon">Telefon</option>
+        <option value="email">Email</option>
+    </select>
+    <button class="btn btn-primary" routerLink='/kupac-dodaj'>Dodaj kupca</button>
+</div>
+<div class="row" *ngFor="let kupac of kupci">
+    <pica-kupac-iz-liste 
+        (obrisan)="osvezi()" 
+        [kupac]="kupac" 
+        [izabranKupac]="izabranKupac" 
+        (click)="izabran(kupac)">
+    </pica-kupac-iz-liste>
+</div>

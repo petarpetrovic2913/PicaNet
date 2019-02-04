@@ -1,0 +1,21 @@
+<div class="svakiKupac">
+  <hr [ngClass] ="{'current-kupac': jeIzabran }"/>
+  <div class="row">
+    <div class="col-md-6">{{kupac.ime}} {{kupac.prezime}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">{{kupac.email}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">{{kupac.telefon}}</div>
+    <div class="col-md-3">{{kupac.stanje}}</div>
+  </div>
+  <div class="row" *ngIf="jeIzabran">
+      <div class="col-md-6">
+    <a class="btn btn-primary" routerLink="/kupac-detalji/{{kupac.id}}">Detalji</a>
+    <button class="btn btn-danger" (click)="obrisiKupca()">Obrisi</button>
+    <button class="btn btn-success" routerLink="/narudzbina/{{kupac.id}}">Naruci</button>
+    </div>
+  </div>
+<hr [ngClass]="{'current-kupac': jeIzabran }"/>
+</div>
